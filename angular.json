@@ -21,11 +21,12 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+  {
+    "glob": "**/*",
+    "input": "public/assets",
+    "output": "/assets"
+  }
+] ,
             "styles": [
               "src/styles.css"
             ],
@@ -79,11 +80,13 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+  {
+    "glob": "**/*",
+    "input": "public/assets",
+    "output": "/assets"
+
+  }
+],
             "styles": [
               "src/styles.css"
             ],
@@ -92,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "33a56afe-ec6e-4869-84d5-638759628d11"
   }
 }

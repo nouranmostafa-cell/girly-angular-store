@@ -1,0 +1,11 @@
+.footer {
+  background-color: #ffe6f0;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 2px solid #ffb6c1;
+  box-shadow: 0 -4px 12px rgba(255, 182, 193, 0.3);
+}
+
+.footer-logo {
+  height: 60px;
+}

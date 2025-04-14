@@ -1,0 +1,12 @@
+<div class="products-section">
+  <h2 class="section-title">✨ Products on Sale ✨</h2>
+
+  <div class="products">
+    <div *ngFor="let product of products" class="card">
+      <img [src]="product.image" alt="product" />
+      <h3>{{ product.productName }}</h3>
+      <p>{{ product.productPrice | currency }}</p>
+      <p *ngIf="product.onSale" class="sale-badge">On Sale!</p>
+    </div>
+  </div>
+</div>

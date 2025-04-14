@@ -1,0 +1,10 @@
+<div class="category-section">
+  <h2 class="section-title">🌸 Shop by Category 🌸</h2>
+
+  <div class="categories">
+    <div *ngFor="let category of categories" class="category-card">
+      <img [src]="category.image" />
+      <p>{{ category.price | currency }}</p>
+    </div>
+  </div>
+</div>
