@@ -1,0 +1,20 @@
+<div>
+<div class="products-section">
+  <h2 class="section-title">💎 Jewelry Collection 💎</h2>
+  <div class="products">
+    @for (product of filteredProducts; track product.productName) {
+      <app-product-card [product]="product"></app-product-card>
+    }
+  </div>
+</div>
+
+<div class="products-section">
+  <h2 class="section-title">✨All  Products✨</h2>
+
+  <div class="products">
+    @for (product of products; track product.productName) {
+      <app-product-card [product]="product"></app-product-card>
+    }
+  </div>
+</div>
+</div>
